@@ -1,0 +1,567 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.scene {
+  width: 10%;
+  height: 10%;
+  perspective: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+   position: relative;
+   width: 5px;
+   height: 5px;
+   transform-style: preserve-3d;
+   animation: rotation 10s infinite alternate;
+}
+
+@keyframes rotation {
+  0% { transform: rotateY(0deg) rotateX(0deg); }
+  100% { transform: rotateY(720deg) rotateX(60deg); }
+}
+
+.cube__face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.cube__face--left {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+  transform: translateX(-25px) rotateY(90deg);
+}
+
+.cube__face--right {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+  transform: translateX(25px) rotateY(90deg);
+}
+
+.cube__face--bottom {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/231/full/bottom.jpg?1497835434');
+  transform: translateY(25px) rotateX(90deg);
+}
+
+.cube__face--top {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/233/thumb/top.jpg?1497835487');
+  transform: translateY(-25px) rotateX(90deg);
+}
+
+.cube__face--back {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+  transform: translateZ(-25px);
+}
+
+.cube__face--front {
+  background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+  transform: translateZ(25px);
+}
+/*----------------------------------------------------------*/
+/*---------------------- SPLASH PAGE ----------------------*/
+/*----------------------------------------------------------*/
+/*---- FONTS: EB Garamond, Balthazar,Copperplate Gothic ----*/
+#BORDER{
+  border: solid black;
+  border-width: 6px;
+  box-sizing: border-box;
+  color:black;
+  position: relative;
+  box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* display: flex; */
+  
+  display: flex; 
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 1vh;
+  height: 97vh;
+  width: 98vw;
+
+
+}
+
+.NUMBER{
+ /* margin-top: -0.5em;
+    padding-right: 38em; 
+    position: fixed;
+    justify-content: center;
+    float: left; 
+    left: 0%;
+  */
+
+  border: solid blue;
+  border-width: 0px;
+  white-space: nowrap;
+  position: relative;
+
+  z-index: -1;
+  display: flex;
+  height: fit-content; /* For 100% screen height */
+  width:  33%; 
+}
+
+.TOP_SPACER{
+  /* margin-top: -0.5em;
+   padding-right: 38em; */
+   border: solid yellow;
+   border-width: 0px;
+   position: relative;
+   white-space: nowrap;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   height: 100; /* For 100% screen height */
+   width:  83%; 
+ }
+
+
+.PIERCE{
+  /*
+      white-space: nowrap;
+  padding-left: 11em;
+  
+    white-space: nowrap;
+    z-index: -1;
+
+  display: flex;
+  height: 12vh; /* For 100% screen height */
+
+  border: solid blue;
+  border-width: 0px;
+
+  position: relative;
+  white-space: wrap;
+  z-index: -1;
+  color: rgb(0, 0, 0);
+  display: flex; 
+  justify-content:baseline;
+  align-items: center;
+  display: flex;
+  height: 100; 
+  width:  7%; 
+}
+.TOP3{
+  border: solid red;
+  border-width: 0px;
+
+  position: absolute;
+  height: 13vh; /* For 100% screen height */
+  width:  99%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:black;
+  z-index: -1;
+  top: 0vh;
+
+}
+.MID3{
+
+  border: solid green;
+  border-width: 0px;
+  z-index: -1;
+  top: 10vh;
+  position: relative;
+  height: 10vh; /* For 100% screen height */
+  width:  99%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color:black;
+  left: 0vw;
+
+  width: fit-content;
+  display: inline-block;
+  background-size: cover;
+
+}
+.BOT3{  
+  flex-shrink: 0;
+
+  border: solid purple;
+  border-width: 0px;
+  z-index: 1;
+  top: 38vh;
+  position: relative;
+  height: 10vh; /* For 100% screen height */
+  width:  95%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:black;
+
+}
+.NAME{
+  /*padding-top: 3em;
+  margin-bottom: -0.5em;
+    width: 100%;
+*/
+  z-index: -1;  
+  border: solid blue;
+  border-width: 0px;
+  position: relative;
+  font-size: 1em;
+  height: 20%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:black;
+  flex-direction: column;
+
+}
+h1 { 
+  overflow-wrap:unset;
+  white-space: nowrap; 
+}
+.TAMU{
+    /*padding-top: 3em;
+  margin-bottom: -0.5em;
+    width: 100%;
+*/
+  z-index: -1;
+  border: solid grey;
+  border-width: 0px;
+  top: 4vh;
+  white-space: nowrap;
+  height: fit-content; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:black;
+  flex-direction: column;
+}
+
+ .HOME
+ {
+  justify-content: center;
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+
+     left: 0vw;
+ }
+ 
+ .navbar {
+  justify-content: center;
+  font-size:2.1vw;
+     overflow: hidden;
+     position: relative;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+   }
+   
+   .navbar a {
+     float: center;
+     display: flex;
+     color:black;
+     text-align: center;
+     padding: 2vh 5vw;
+     text-decoration: none;
+     font-size: 1em;
+   }
+   .navbar a:hover {
+     text-decoration: underline;
+     color:black;
+
+   }
+   
+   .navbar a.active {
+     background-color: #04AA6D;
+     color:black;
+    }
+   .c1 {
+    text-align: center;
+    }
+   .center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid green;
+    border-width: 0px;
+    margin-top: 5%;
+    width: 80%;
+    background-image: "./faxpaper.png"
+    }
+
+    
+  .center_picture {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    width: 40%;
+    }
+/*----------------------------------------------------------*/
+/*----------------------SPLASH PAGE END---------------------*/
+/*----------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------*/
+/*--------------------- DEFAULT WEBPAGE ---------------------*/
+/*----------------------------------------------------------*/
+
+body {
+    background-image: url("./blank.webp");
+    font-family: 'Balthazar', serif;
+    font-size: 2em;
+    overflow-x: hidden;
+    color: black;
+    overflow-y: scroll;
+
+ }
+
+
+ .FAXBACKGROUND
+ {
+   font-family: 'Balthazar', serif;
+   font-size: 2em;
+   padding-top: 0em;
+   padding-bottom: 0em;
+ }
+ .WATERMARK
+ {
+   padding-right: 20em;
+   font-size: .8em;
+   margin-top: -4em;
+   text-align: center;
+   position:relative;
+ }
+ 
+ .NEXT
+ {
+   padding-left: 20em;
+   font-size: .8em;
+   margin-top: -1.5em;
+   text-align: center;
+   position:relative;
+ }
+
+ .line1
+ {
+  border: solid black;
+  border-width: 1px;
+  position: relative;
+  text-align: center;
+  width: 92%;
+  height: 0px;
+  left: 3%;
+
+ }
+
+
+ .horizontalLine {
+
+  position: relative;
+   width: 20px;
+   height: 100%;
+   background-color: rgb(0, 0, 0);
+
+ }
+ .title{
+  position: relative;
+  border: solid green;
+  border-width: 0px;
+  display: flex;
+  text-align: left;
+  padding-top: 5%;
+  left: 0%;
+  padding-left: 5%;
+ }
+ .FAX
+ {
+  border: solid red;
+  border-width: 0px;
+   font-size: 2em;
+   top: 2%;
+   text-align: center;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+
+   width: 12em;
+   height: 10em;
+   text-align: center;
+   padding-top: 4%;
+
+   margin-left: auto;
+   margin-right: auto;
+   
+   background-image: url("./faxpaper.png");
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+
+ }
+ img{
+  height: 40%;
+ }
+ .comment{
+  position: relative;
+
+  border: solid purple;
+  border-width: 0px;
+   font-size: 0.2em;
+   text-align: left;
+   align-items: center;
+   left: 3%;
+   width: 90%;
+   overflow: wrap;
+ }
+ .topic
+ {
+  position: relative;
+  border: solid yellowgreen;
+  border-width: 0px;
+   font-size: .3em;
+   text-align: left;
+   text-align: center;
+   justify-content: center;
+   width: 35%;
+   height: 3%;
+   white-space:nowrap;
+  padding-bottom: 4%;
+}
+
+
+.PAPER
+{
+  display: flex;
+  height: 50%;
+  width: 0vw;
+  position: relative;
+
+}
+.header
+{
+  flex-shrink: 0;
+  bottom: 0vh;
+  top: 0vh;
+  right: 10vw;
+  height: 0vh; /* For 100% screen height */
+  width:  10vw; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*----------------------------------------------------------*/
+/*--------------------- DEFAULT WEBPAGE END ----------------*/
+/*----------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/*--------------------- FIXED CODE--------------------*/
+/*----------------------------------------------------------*/
+.creative_projects
+{
+  font-size: 2em;
+  margin-top: -9.0em;
+  padding-right: 7em;
+  text-align: center;
+}
+
+.creative_topics
+{
+  font-size: .3em;
+  margin-top: -0.5em;
+  padding-left: 0em;
+  margin-bottom: -0.4em;
+  overflow: nowrap;
+}
+
+.creative_comments
+{
+  padding-top: 0.01em;
+  font-size: 0.25em;
+  padding-left: 1.1em;
+  text-align: left;
+  overflow: nowrap;
+}
+.creative_comments1
+{
+  padding-top: 1em;
+  font-size: 0.25em;
+  padding-left: 25em;
+  text-align: left;
+  overflow: nowrap;
+}
+
+p{
+    text-align: center;
+}
+.switch {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: relative;
+  cursor: pointer;
+  opacity: 10;
+
+  width: 10;
+  font-size: 2.1vw;
+  min-width: 12vw;
+
+  min-height: 6vh;
+  justify-content: center;
+
+  text-align: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  opacity: 0;
+
+  position: absolute;
+  content: "";
+  height: 36px;
+  width: 36px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(260px);
+  -ms-transform: translateX(260px);
+  transform: translateX(260px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 440px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
