@@ -9,7 +9,7 @@ if(ua.os.family !== null) {
         var stylePage = document.getElementById("mainStyle");
         var fileName = stylePage.getAttribute("href");
         var newFileName = "";
-        newFileName = "css_files/dummy.css";
+        newFileName = "mobile.css";
 
         stylePage.setAttribute("href", newFileName);
         styleElement.setAttribute("href",newFileName);

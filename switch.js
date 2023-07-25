@@ -1,3 +1,5 @@
+/*
+
 function toggleStyleSheet(){
 
     const styleElement = document.getElementById("mainStyle")
@@ -18,3 +20,5 @@ window.onload = function()
         var htmlStyleElement = document.getElementById("mainStyle");
         htmlStyleElement.setAttribute("href",styleSheetName);
     }
+    
+*/

@@ -84,6 +84,7 @@ body {
   top: 1vh;
   height: 98vh;
   width: 98vw;
+  overflow-x: hidden;
 
 
 }
@@ -372,6 +373,7 @@ body {
     font-family: 'Balthazar', serif;
     font-size: 2em;
     overflow-x: hidden;
+
     color: black;
     background-image: url("./wawy.webp");
 
