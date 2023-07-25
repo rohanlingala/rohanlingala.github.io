@@ -68,21 +68,21 @@ body {
 /*---- FONTS: EB Garamond, Balthazar,Copperplate Gothic ----*/
 #BORDER{
   border: solid black;
-  border-width: 6px;
+  border-width: 5px;
   box-sizing: border-box;
   color:black;
   position: relative;
   box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* display: flex; */
-  
+
   display: flex; 
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto auto;
   justify-content: center;
   align-items: center;
   z-index: 1;
   top: 1vh;
-  height: 97vh;
+  height: 98vh;
   width: 98vw;
 
 
@@ -163,10 +163,11 @@ body {
   top: 0vh;
 
 }
+
+
+
 .MID3{
 
-  border: solid green;
-  border-width: 0px;
   z-index: -1;
   top: 10vh;
   position: relative;
@@ -184,12 +185,21 @@ body {
   background-size: cover;
 
 }
+
+@media only screen and (max-height: 12em) {
+  .MID3 {
+      display: none;
+      border: solid green;
+      border-width: 7px;
+  }
+}
+
 .BOT3{  
   flex-shrink: 0;
 
   border: solid purple;
   border-width: 0px;
-  z-index: 1;
+  z-index: 0;
   top: 38vh;
   position: relative;
   height: 10vh; /* For 100% screen height */
@@ -199,6 +209,45 @@ body {
   justify-content: center;
   color:black;
 
+}
+@media only screen and (max-height: 12em) {
+  .BOT3 {
+    top: 12vh;
+    font-size: 0.7em;
+    border: solid green;
+      border-width: 0px;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .BOT3 {
+    font-size: 0.7em;
+    border: solid green;
+      border-width: 0px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .MID3 {
+    font-size: 0.7em;
+    border: solid green;
+      border-width: 0px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .TOP3 {
+    font-size: 0.7em;
+    border: solid green;
+      border-width: 0px;
+  }
+}
+
+@media only screen and (max-height: 13em) {
+  .TOP3 {
+    display: none;
+    border: solid green;
+      border-width: 0px;
+  }
 }
 .NAME{
   /*padding-top: 3em;
@@ -248,28 +297,35 @@ h1 {
      display: flex;
      flex-direction: row;
      text-align: center;
-
+     height: fit-content;
+     text-align: center;
      left: 0vw;
  }
  
  .navbar {
   justify-content: center;
-  font-size:2.1vw;
      overflow: hidden;
      position: relative;
      bottom: 0;
      width: 100%;
+     height: fit-content;
+
      display: flex;
    }
    
    .navbar a {
+    border: solid grey;
+    border-width: 0px;
      float: center;
      display: flex;
+     height: 5%;
+     width: 25%;
+     flex-direction: row;
      color:black;
      text-align: center;
-     padding: 2vh 5vw;
+     justify-content: center;
+     margin: 0vh 0vw 0vh 0vh;
      text-decoration: none;
-     font-size: 1em;
    }
    .navbar a:hover {
      text-decoration: underline;
@@ -313,12 +369,11 @@ h1 {
 /*----------------------------------------------------------*/
 
 body {
-    background-image: url("./blank.webp");
     font-family: 'Balthazar', serif;
     font-size: 2em;
     overflow-x: hidden;
     color: black;
-    overflow-y: scroll;
+    background-image: url("./wawy.webp");
 
  }
 
@@ -326,10 +381,13 @@ body {
  .FAXBACKGROUND
  {
    font-family: 'Balthazar', serif;
-   font-size: 2em;
    padding-top: 0em;
    padding-bottom: 0em;
+   background-image: url(endportal.gif);
+   background-repeat:repeat;
+   height: 100%;
  }
+
  .WATERMARK
  {
    padding-right: 20em;
