@@ -2,7 +2,7 @@ const ua = detect.parse(navigator.userAgent);
 
 if(ua.os.family !== null) {   
 
-    if(ua.os.family === 'iPhone'){
+    if(ua.device.family === 'iPhone'){
         //TODO check 
         console.log("we are on iphone baby");
         const styleElement = document.getElementById("mainStyle")
@@ -15,10 +15,11 @@ if(ua.os.family !== null) {
         styleElement.setAttribute("href",newFileName);
         localStorage.setItem("stylesheet",newFileName);
     }
-    if(ua.os.family === 'Android'){
+    if(ua.device.family === 'Android'){
+        console.log("anroidf")
         //TODO check 
     }  
-    if(ua.os.family === 'Mac OS X'){
+    if(ua.device.family === 'Mac OS X'){
         //TODO check 
         console.log("we are on mac baby");
         const styleElement = document.getElementById("mainStyle")
