@@ -368,7 +368,8 @@ a {
       background-repeat:no-repeat;
       font-size: 1.9em;
       overflow-x: hidden;
-      
+      overflow-y: scroll;
+
       color: white;
       overflow-y: scroll;
       font-family: myFirstFont;
@@ -395,8 +396,9 @@ a {
    .NEXT
    {
      padding-left: 0em;
-     font-size: .8em;
+     font-size: 2em;
      margin-top: -1.5em;
+     top: 4em;
      text-align: center;
      position:relative;
    }
@@ -444,13 +446,13 @@ a {
      flex-direction: column;
   
      width: 8em;
-     height: 10em;
+     height: 7em;
      text-align: center;
      padding-top: 4%;
   
      margin-left: auto;
      margin-right: auto;
-     
+     overflow-y: scroll;
      background-image: url("./faxpaper.png");
      background-position: center; /* Center the image */
      background-repeat: no-repeat;
