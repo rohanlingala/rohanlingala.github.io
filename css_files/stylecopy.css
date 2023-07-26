@@ -382,12 +382,18 @@ body {
 
  .FAXBACKGROUND
  {
+  border: solid green;
+  border-width: 0px;
    font-family: 'Balthazar', serif;
    padding-top: 0em;
    padding-bottom: 0em;
    background-image: url(endportal.gif);
    background-repeat:repeat;
    height: 100%;
+
+  overflow-y: scroll;
+   margin-left: auto;
+   margin-right: auto;
  }
 
  .WATERMARK
@@ -403,7 +409,8 @@ body {
  {
    padding-left: 20em;
    font-size: .8em;
-   margin-top: -1.5em;
+   margin-top: 0em;
+   bottom: 5vh;
    text-align: center;
    position:relative;
  }
@@ -444,40 +451,46 @@ body {
   border: solid red;
   border-width: 0px;
    font-size: 2em;
-   top: 2%;
+   top: 4%;
    text-align: center;
    position: relative;
    display: flex;
    flex-direction: column;
-
    width: 12em;
    height: 10em;
    text-align: center;
    padding-top: 4%;
-
    margin-left: auto;
    margin-right: auto;
    
    background-image: url("./faxpaper.png");
    background-position: center; /* Center the image */
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-size: 100% 100%;
 
  }
+
+
+
  img{
   height: 40%;
  }
  .comment{
   position: relative;
-
+  height: 54%;
   border: solid purple;
   border-width: 0px;
    font-size: 0.2em;
    text-align: left;
+   top: 2vh;
    align-items: center;
-   left: 3%;
-   width: 90%;
-   overflow: wrap;
+   left: 3.0%;
+   width: 93%;
+   overflow-x: hidden;
+   overflow-y: scroll;
+
+   scrollbar-color: #0D1922 #E9EAE5;
+   scrollbar-width:thin;
  }
  .topic
  {
