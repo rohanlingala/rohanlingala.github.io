@@ -1,6 +1,14 @@
 function toggleStyleSheet(){
 
-    onclick="location.href='blog.html';"
+    const styleElement = document.getElementById("mainStyle")
+    var stylePage = document.getElementById("mainStyle");
+    var fileName = stylePage.getAttribute("href");
+    var newFileName = "";
+    if(fileName == "css_files/stylecopy.css") newFileName = "css_files/stylecopy.css";
+    else newFileName = "css_files/stylecopy.css";
+    stylePage.setAttribute("href", newFileName);
+    styleElement.setAttribute("href",newFileName);
+    localStorage.setItem("stylesheet",newFileName);
 
 }
 
