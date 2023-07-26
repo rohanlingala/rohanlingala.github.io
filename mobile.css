@@ -213,11 +213,10 @@ body {
 }
   .BOT3{  
     flex-shrink: 0;
-  
     border: solid purple;
     border-width:0px;
     z-index: 1;
-    bottom: 5vh;
+    bottom: 7vh;
     position: relative;
     height: 30vh; /* For 100% screen height */
     width:  100vw; 
@@ -227,6 +226,13 @@ body {
     color:white;
   
   }
+  a:active {
+    color: orange;
+}
+a {   
+  color: lime;   
+}
+
   .NAME{
     /*padding-top: 3em;
     margin-bottom: -0.5em;
@@ -259,8 +265,8 @@ body {
     z-index: -1;
     border: solid grey;
     border-width: 0px;
-    top: 6vh;
-    font-size: 1.6em;
+    top: 1vh;
+    font-size: 1.8em;
     white-space: nowrap;
     height: fit-content; 
     position: relative;
@@ -277,11 +283,12 @@ body {
        display: flex;
        flex-direction: row;
        text-align: center;
-  
+
        left: 0vw;
    }
    
-   .navbar {
+   .navbar {    
+
     border: solid blue;
     border-width: 0px;
     justify-content: center;
@@ -296,6 +303,7 @@ body {
      }
      
      .navbar a {
+
       border: solid orange;
       border-width: 0px;
        float: center;
@@ -307,7 +315,7 @@ body {
        margin-right: auto;
        text-align: center;
        text-decoration: none;
-       font-size: 1em;
+       font-size: 1.7em;
      }
      .navbar a:hover {
        text-decoration: underline;
@@ -358,7 +366,7 @@ body {
       background-size: 100% 22%;
       
       background-repeat:no-repeat;
-      font-size: 2em;
+      font-size: 1.9em;
       overflow-x: hidden;
       
       color: white;
@@ -371,7 +379,6 @@ body {
   
    .FAXBACKGROUND
    {
-     font-family: 'Balthazar', serif;
      font-size: 2em;
      padding-top: 0em;
      padding-bottom: 0em;
@@ -447,8 +454,7 @@ body {
      background-image: url("./faxpaper.png");
      background-position: center; /* Center the image */
      background-repeat: no-repeat;
-     background-size: 100% 100%;
-  
+     background-size: 100% 100%;  
    }
    img{
     height: 40%;
