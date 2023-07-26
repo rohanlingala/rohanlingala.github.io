@@ -396,6 +396,12 @@ body {
    margin-right: auto;
  }
 
+ a:active {
+  color: orange;
+}
+a {   
+color: blue;   
+}
  .WATERMARK
  {
    padding-right: 20em;
@@ -407,7 +413,7 @@ body {
  
  .NEXT
  {
-   padding-left: 20em;
+   padding-right: 2em;
    font-size: .8em;
    margin-top: 0em;
    bottom: 5vh;
