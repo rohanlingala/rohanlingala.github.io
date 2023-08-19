@@ -414,11 +414,12 @@ color: blue;
  .NEXT
  {
    padding-right: 2em;
-   font-size: .8em;
-   margin-top: 0em;
+   top: 3em;
+   font-size: .4em;
    bottom: 5vh;
+   justify-content: center;
    text-align: center;
-   position:relative;
+   position: relative;
  }
 
  .line1
